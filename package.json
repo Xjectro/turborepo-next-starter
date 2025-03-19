@@ -1,0 +1,29 @@
+{
+  "name": "shadcn-ui-monorepo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "dotenv turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md,css,json,js,mjs}\""
+  },
+  "devDependencies": {
+    "@repo/env": "workspace:*",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/internationalization": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@repo/utils": "workspace:*",
+    "@repo/ui": "workspace:*",
+    "prettier": "^3.5.3",
+    "turbo": "^2.4.4",
+    "typescript": "5.7.3"
+  },
+  "packageManager": "pnpm@10.4.1",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv-cli": "^8.0.0"
+  }
+}
